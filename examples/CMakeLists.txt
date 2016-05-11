@@ -116,3 +116,7 @@ if (GFLAGS)
   target_link_libraries(robot_pose_mle ceres ${GFLAGS_LIBRARIES})
 
 endif (GFLAGS)
+
+
+add_executable(gps_problem gps_problem.cc)
+target_link_libraries(gps_problem ceres)
